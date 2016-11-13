@@ -1,0 +1,48 @@
+﻿<md-container>
+    <section class="login_inicio bg_rp">
+        <form action="">
+            <h1>Complete con sus datos.</h1>
+            <md-input-container class="ic">
+
+                <label class="lbl">Ingrese su Nombre..</label>
+                <input ng-model="nuevoUser.Nombre" class="inp" required>
+
+            </md-input-container>
+
+            <md-input-container class="ic">
+
+                <label class="lbl">Ingrese su Apellido..</label>
+                <input ng-model="nuevoUser.Apellido" class="inp" required>
+
+            </md-input-container>
+
+            <md-input-container class="ic">
+
+                <label class="lbl">Ingrese un email de contacto..</label>
+                <input type="email" ng-model="nuevoUser.Email" class="inp" required>
+
+            </md-input-container>            
+
+            <md-input-container class="ic">
+
+                <label class="lbl">Ingrese una contraseña..</label>
+                <input type="password" ng-model="nuevoUser.Password" class="inp" required>
+
+            </md-input-container>
+
+            <md-input-container class="ic">
+
+                <label class="lbl">Repita la contraseña..</label>
+                <input type="password" ng-model="nuevoUser.ConfirmPassword" class="inp" required>
+
+            </md-input-container>
+
+            <md-button class="md-primary md-raised" style="background:rgb(62, 138, 187);" ng-click="registrarProfesional(nuevoUser)">Registrarse</md-button>
+            
+            <div data-ng-hide="message == ''" data-ng-class="(savedSuccessfully) ? 'alert alert-success' : 'alert alert-danger'">
+                {{message}}
+            </div>
+
+        </form>
+    </section>
+</md-container>

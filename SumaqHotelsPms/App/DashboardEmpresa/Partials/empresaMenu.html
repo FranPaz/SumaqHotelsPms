@@ -1,0 +1,24 @@
+   <div class="p_info">
+        <img src="img/oc.jpg" alt="">
+        <div class="t_info">
+        <h5>bienvenido</h5>
+<h2><a>{{authentication.userName}}</a></h2>
+    </div>
+</div>
+<div class="menu_s">
+    <ul>
+
+        <h1>OFERTAS</h1>
+
+       <a ui-sref="empresa.ofertas">
+                <li><span class="icon-bullhorn"></span> Listado de Ofertas</li>
+            </a>
+            <a ui-sref="empresa.ofertas.nuevaOferta">
+                <li><span class="icon-bullhorn"></span> Agregar ofertas</li>
+            </a>        
+        <a ng-click="logOut()">
+            <li><span class="icon-exit icono_de"></span></li>
+        </a>
+    </ul>
+</div>
+
